@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+    font-family: "poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --gray:#FFFFFF;
+    --white:#F8F8F8;
+    --yellow:#C8A165;
+    --small-black:#303030;
+    --small-white:#EEE3D1;
+    --black-white:#E9E9E9;
+    --medium-black:#606060;
+
+
+    --text-small: 10px;
+    --text-medium: 14px;
+    --text-smedium: 18px;
+    --text-xl: 22px;
+    --text-2xl: 25px;
+    --text-3xl: 30px;
+    --text-4xl: 35px;
+    --text-5xl: 40px;
+    --text-large: 70px;
+}
+
+/*----------global style-----------*/
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+.primary-outine-btn{
+    background: var(--small-black);
+    border: 2px solid solid var(--small-white);
+    text-transform: uppercase;
+    color: var(--small-white);
+    padding: 8px 24px;
+   transition: 0.5s ease-in-out;
+   margin: 0 10px;
+}
+
+.primary-outine-btn:hover{
+    background-color: var(--yellow);
+    color: var(--small-white);
+    cursor: pointer;
+}
+.primary-outine-btn1{
+    border: 1px solid var(--black-white);
+    padding: 30px 5px;
+    transition: 0.5s ease-in-out;
+    background-color: var(--gray);
+    font-weight: 500;
+    font-size: var(--text-medium);
+    color: var(--small-black);
+   
+}
+.primary-outine-btn1:hover{
+    cursor: pointer;
+    background-color: var(--yellow);
+    color: var(--white);
+}
+
+.flexsc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.flexsb{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+
+.flexc{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+button{
+    background: none;
+    border: none;
+}
+.container{
+    max-width: 90%;
+    margin: auto;
+}
+.grid4{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.grid3{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    margin: 0 40px;
+}
+
+.heading h2{
+    font-size:var(--text-large);
+    padding-bottom: 15px;
+    text-transform: capitalize;
+}
+
+/*---------header-----------*/
+.header{
+    background: var(--gray);
+}
+.header.logo img{
+    height: 50px;
+}
+.header a{
+    color: var(--small-black);
+    font-size: var(--text-smedium);
+    text-transform: uppercase;
+}
+.header a:hover{
+    color: var(--yellow);
+    cursor: pointer;
+}
+.header .container i:hover{
+    color: var(--yellow);
+    cursor: pointer;
+}
+.header .container .logo img{
+    margin-top: 20px;
+}
+
+
+/*---------home-section-----------*/
+.home {
+    background-color: var(--white);
+    position: relative;
+    height: 90vh;
+    display: flex;
+}
+
+.home .flexc{
+    text-align: center;
+    flex-direction: column;
+}
+
+.home .primry-outline-btn {
+    padding: 15px 40px;
+}
+.home p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: var(--small-black);
+}
+.home h1{
+    color: var(--small-black);
+    font-size: var(--text-large);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.home h2{
+    color: var(--small-black);
+    font-weight: 500;;
+}
+.home .container i{
+    color: var(--yellow);
+   margin-left: 5px;
+   margin-right: 5px;
+}
+
+/*---------demo-section-----------*/
+.demo .grid4 {
+    gap: 30px;
+}
+.demo .card{
+    position: relative;
+    min-height: 200px;
+}
+
+.demo .container .card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+
+.demo .card .img{
+    border-radius: 10px;
+    position: relative;
+}
+
+.demo .card .img img{
+    width:100%;
+   height: 100%;
+   border-radius: 10px;
+   object-fit: cover;
+}
+.demo .flexc{
+    margin: 40px 0;
+}
+
+.demo .heading h1{
+    text-align: center;
+    margin: 10px 0;
+    font-size: var(--text-5xl);
+    color:var(--small-black);
+    font-weight: 500;
+}
+.demo .heading .primary-outine-btn{
+    background-color: var(--white);
+    color: var(--small-black);
+    font-weight: 550;
+    margin-top: 20px;
+}
+
+.demo .heading .primary-outine-btn:hover{
+   color: var(--small-white);
+   background-color: var(--yellow);
+   cursor: pointer;
+}
+
+/*---------banner-section-----------*/
+
+.banner{
+    background-color:var(--yellow);
+    height: 120px;
+    margin: 40px 0;
+}
+
+.banner .flexc{
+   float: right;
+}
+.banner h1,p{
+    color: var(--gray);
+    font-weight: 600;
+  
+}
+.banner .primary-outine-btn{
+    background-color: var(--gray);
+    color: var(--yellow);
+    font-weight: 600;
+}
+.banner .primary-outine-btn:hover{
+    color: var(--small-black);
+}
+
+
+/*---------Available-section-----------*/
+.available{
+    height: 70vh;
+}
+
+.available .grid4{
+    gap: 30px;
+}
+.available h1,p{
+    color: var(--small-black);
+}
+ 
+
+.available .heading{
+   text-align: center;
+   margin: 30px 0;
+ }
+
+ /*---------footer-section-----------*/
+
+ .footer{
+    height: 40vh;
+ }
+.footer .heading p{
+    color:var(--medium-black);
+    margin-bottom: 30px;
+}
+.footer h1{
+    color:var(--small-black);
+}
+.footer .heading{
+    text-align: center;
+    margin: 30px 0;
+}
+.footer .grid3 p{
+    font-size: var(--text-1xl);
+    color: var(--small-black);
+}
+
+
+ /*---------media-section-----------*/
+
+@media screen and (max-width:768px) {
+  .header .container ul{
+    display: none;
+    
+  }
+    .grid4{
+        grid-template-columns: repeat(2,1fr);
+
+    }
+
+    .home .container h1{
+        font-size: var(--text-5xl);
+    }
+    .home .container h2{
+        font-size: var(--text-2xl);
+    }
+    .home .container .primary-outine-btn{
+       margin: 10px 7px;
+       padding: 17px 10px;
+    }
+
+   .demo .container .heading h1{
+    font-size: var(--text-5xl);
+   }
+   .demo .container .heading .primary-outine-btn{
+   display: flex;
+   }
+   .demo .flexc{
+    flex-wrap: wrap;
+   }
+   .demo .container .heading h1{
+     font-size: var(--text-3xl);
+   }
+   .footer{
+    margin: 300px 0;
+   }
+   
+   
+}
